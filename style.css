@@ -46,18 +46,20 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(124, 100, 100);
+    background: rgb(139, 109, 109);
     display: flex;
     margin-top: 20px;
 }
 
 .sidebar {
     margin-right: 25px;
-    padding: 10px;
+    margin-left
+    padding: 20px;
 }
 
 .sidebar-img {
     width: 200px;
+
 }
 
 .content {
