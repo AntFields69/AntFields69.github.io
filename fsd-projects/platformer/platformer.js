@@ -45,11 +45,13 @@ $(function () {
 
     
     // TODO 4 - Create Cannons
-    createCannon("right", 790, 1000)
-    createCannon("right", 650, 1000)
+    createCannon("right", 790, 250)
+    createCannon("right", 650, 750)
     createCannon("right", 510, 1000)
-    createCannon("right", 320, 1000)
-    createCannon("right", 180, 1000)
+    createCannon("right", 320, 1300)
+    createCannon("right", 180, 2000
+      
+    )
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
