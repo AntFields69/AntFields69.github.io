@@ -29,22 +29,39 @@ async function bubbleSort(array) {
 }
 
 // TODO 3: Implement quickSort
-async function quickSort(array, left, right) {
-    if (right - left > 0) {
-      var index = await partition(array, left, right)
-    }
-    else if (left < index - 1) {
+  async function quickSort(array, left, right) {
+     if (right - left > 0) {
+       var index = await partition(array, left, right)
+     }
+     else if (left < index - 1) {
         quickSort(array, left, index - 1)
-    }
-    else if (index < right) {
+     }
+     else if (index < right) {
         quickSort(array, index, right)
-    }
+     }
 
 
 }
 
 // TODOs 4 & 5: Implement partition
-
+    async function partition(array, left, right) {
+        var pivot = array[Math.floor((right + left) / 2)].value
+       while (left < right) {
+        while (array[left].value < pivot.value) {
+             left += 1
+        }
+        while (array[right].value > pivot.value) {
+            right -= 1
+        }
+        if (left < right) {
+            swap(array, left, right)
+            updateCounter(quickCounter)
+            await sleep()
+        }
+    }
+       return left + 1
+    
+    }
 
 // TODO 1: Implement swap
 function swap(array, i, j) {
